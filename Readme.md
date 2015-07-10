@@ -33,7 +33,7 @@ Some examples:
 |.button      |$('.button')     |All elements with class=”button”|
 |#headline    |$('#headline')   |The element with id=”headline”|
 |.code strong |$('.code strong')|all of the strong elements with parent elements with the class="code"|
-|header nav li.home|$('header nav.home)|All the li elements inside navs inside headers with the class home'|
+|header nav li.home|$('header nav.home')|All the li elements inside navs inside headers with the class home'|
 
 You can make them pretty specific!
 
@@ -65,6 +65,8 @@ The cheatsheet has lots more ways to add and remove elements. How would you add 
 ## JQuery and CSS
 JQuery doesn’t just work to modify HTML - it also works to change the style of a page! Any kind of css that you might want to add, you can add!
 
-The .css() command will let you add any css you want to an element you’ve selected. However, there are also shortcuts to doing things that we want to do frequently -  using them is not only more concise, it also adds more more meaning to our code than a ‘style change’. For instance, making elements hide and show themselves is just an update to a CSS property. But, the code is more understandable, and thus more maintainable, if we write  `$('.menu').hide()` rather than `$('.menu').css({"display": "none"})`.
-
-As always, it's a good idea to maintain separation of concerns here too. Instead of using the .css() method and having style inside your javascript, you can keep all your css in the css file, and use jquery to add and remove classes from elements. Can you find the jquery method to add or remove a class?
+Here are some methods you can use to edit your CSS with JQuery:
++ addClass() - Adds one or more classes to the selected elements
++ removeClass() - Removes one or more classes from the selected elements
++ toggleClass() - Toggles between adding/removing classes from the selected elements
++ css() - Sets or returns the style attribute
