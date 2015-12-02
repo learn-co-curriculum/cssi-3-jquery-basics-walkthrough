@@ -122,3 +122,5 @@ Now you try adding a new class rule to the html and then using JQuery to apply i
 
 
 
+
+<a href='https://learn.co/lessons/cssi-3-jquery-basics-walkthrough' data-visibility='hidden'>View this lesson on Learn.co</a>
